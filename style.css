@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #262626;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: start;
+    height: 100vh;
+}
+
+.insta-phone img {
+    margin-right: 10px;
+}
+
+.insta-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 3rem;
+    margin-top: 10px;
+}
+
+.foto-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /*imagem não cede pra fora*/
+    margin: 15px;
+}
+
+.group {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1.3rem 0;
+    margin: 10px;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.continue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+button {
+    background-color: #0095f6;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+}
+
+.login {
+    color: white;
+    font-weight: bold;
+}
+
+.logout {
+    color:#0095f6;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.link-blue{
+    color: #0095f6;
+    font-weight: bold;
+}
+
+.notaccount {
+    margin: 10px;
+}
+
+.getapp {
+    margin: 10px;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .flex-container {
+        width: 90%;
+    }
+}
+
+/*responsividade com media queries*/
+
+@media (max-width: 650px) {
+    .insta-phone {
+        width: 90%;
+        display: none; /*se a janela tiver menos de 650 px, retira a foto do celular da tela.*/
+    }
+
+    .continue {
+        width: 90%;
+    }
+}
