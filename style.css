@@ -68,7 +68,7 @@ body {
 }
 
 button {
-    background-color: #0095f6;
+    background-image: linear-gradient(#4b89c3, #205d8d) ;
     border: none;
     padding: 8px;
     border-radius: 4px;
@@ -83,13 +83,13 @@ button {
 }
 
 .logout {
-    color:#0095f6;
+    color:#205d8d;
     font-weight: bold;
     margin-top: 0.5rem;
 }
 
 .link-blue{
-    color: #0095f6;
+    color: #205d8d;
     font-weight: bold;
 }
 
